@@ -3,9 +3,13 @@ const router = express.Router();
 
 // Do work here
 router.get('/', (req, res) => {
-  const codingGenius = { name: 'Isaac', age: 48, cool: true };
-  //* res.send('Hey! It works!');
-  res.json(codingGenius);
+  //! const codingGenius = { name: 'Isaac', age: 48, cool: true };
+  //! res.json(codingGenius);
+  res.render('hello', {
+    name: 'Isaac', 
+    age: 43, 
+    cool: true
+  });
 });
 
 module.exports = router;
