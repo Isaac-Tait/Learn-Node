@@ -1,4 +1,4 @@
-exports.myMiddleWare = (req, res, next) => {
+exports.myMiddleware = (req, res, next) => {
     req.name = 'Isaac';
     next();
 };
