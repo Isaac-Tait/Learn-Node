@@ -1,7 +1,8 @@
 extends layout
 
 block content
-    h3 Hello world my name is #{name}
+    h1 Hello world my name is #{name}
     p After taking a wee vacation I am back. It was a nice break, I was getting a little burn out on coding seven days a week (although I did not necessarily commit to GitHub 7 days a week) for months on end.
     p I wonder where I will be in my coding journey in 6+ years when I am #{age}? 
+    emp Sale end in #{h.moment().endOf('day').fromNow()}
     button #{cool}

@@ -8,7 +8,8 @@ router.get('/', (req, res) => {
   res.render('hello', {
     name: 'Isaac', 
     age: 43, 
-    cool: true
+    cool: true,
+    title: 'grvlnt'
   });
 });
 
