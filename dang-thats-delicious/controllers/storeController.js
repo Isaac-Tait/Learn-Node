@@ -8,11 +8,12 @@ exports.homePage = (req, res) => {
 };
 
 exports.addStore = (req, res) => { 
-    res.render('editStore', { title: '🏔 Add Store' })
+    res.render('editStore', { title: 'Add Store 🏔' })
 };
 
-exports.createStore = async (req, res) => {
-    const store = new Store(req.body)
+exports.createStore = /*async*/ (req, res) => {
+    /*const store = new Store(req.body)
     await store.save()
-    res.redirect('/')
+    res.redirect('/')*/
+    res.json(req.body);
 };
